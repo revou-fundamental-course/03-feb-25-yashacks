@@ -1,0 +1,78 @@
+<!-- Dokumen HTML untuk aplikasi konversi suhu -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tag untuk karakter encoding dan viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link ke stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Judul halaman -->
+    <title>Farenheit converter</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container-head">
+            <h1>FARENHEIT CONVERTER</h1>
+        </div>
+    </header>
+    <!-- Main content -->
+    <main>
+        <div class="container-main">
+            <div class="card">
+                <!-- Deskripsi aplikasi -->
+                <p>
+                    <b id="input-label">masukkan suhu derajar celcius(&deg;C) ke kotak dibawah, lalu tekan tombol konversi untuk memperoleh nilai dalam bentuk fahrenheit(&deg;F)</b>
+                </p>
+                <!-- Input suhu -->
+                <div class="input-group">
+                    <p id="input-type">celcius(&deg;C)</p>
+                    <input type="number" id="celcius">
+                </div>
+                <!-- Tombol konversi, reset, dan reverse -->
+                <div class="button-group">
+                    <input class="" type="button" id="konversi" value="konversi">
+                    <input class="" type="button" id="reset" value="reset">
+                    <input class="" type="button" id="reverse" value="reverse">
+                </div>
+                <!-- Hasil konversi -->
+                <div class="result">
+                    <p id="result-type">fahrenheit(&deg;F)</p>
+                    <input type="text" id="result" readonly>
+                </div>
+                <!-- Penjelasan konversi -->
+                <div class="explanation">
+                    <p>cara kalkulasi</p>
+                    <input type="text" id="explanation" readonly>
+                </div>
+            </div>
+            <!-- Penjelasan dan cara mengubah Farenheit ke Celcius dan sebaliknya -->
+            <div class="card">
+                <p>Penjelasan dan Cara Mengubah Farenheit ke Celcius dan Sebaliknya:</p>
+                <p id="penjelasan-celcius-ke-fahrenheit">
+                <b>Mengubah Farenheit ke Celcius</b>
+                <ul>
+                    <li>Rumus: Celcius = (Farenheit - 32) × 5/9</li>
+                    <li>Contoh: Jika suhu Farenheit adalah 100°F, maka suhu Celcius adalah (100 - 32) × 5/9 = 37,78°C</li>
+                    <li>Penjelasan: Untuk mengubah suhu dari Farenheit ke Celcius, kita perlu mengurangi 32 dari suhu Farenheit, kemudian mengalikan hasilnya dengan 5/9.</li>
+                </ul>
+                </p>
+                <p id="penjelasan-fahrenheit-ke-celcius">
+                <b>Mengubah Celcius ke Farenheit</b>
+                <ul>
+                    <li>Rumus: Farenheit = (Celcius × 9/5) + 32</li>
+                    <li>Contoh: Jika suhu Celcius adalah 30°C, maka suhu Farenheit adalah (30 × 9/5) + 32 = 86°F</li>
+                    <li>Penjelasan: Untuk mengubah suhu dari Celcius ke Farenheit, kita perlu mengalikan suhu Celcius dengan 9/5, kemudian menambahkan 32 ke hasilnya.</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+    </footer>
+    <!-- Script untuk aplikasi -->
+    <script src="javascript/script.js"></script>
+</body>
+</html>
